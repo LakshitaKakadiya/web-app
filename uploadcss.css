@@ -1,0 +1,91 @@
+.logoutdiv{
+	background-color: #f2f2f2;
+	width: 100%;
+	height: 55px;	 
+	padding-top: 5px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+}
+
+.btn-lg{
+	padding: 5px 10px;
+	float: right;
+	font-size: 15px;	
+}
+
+
+#logoutbtn
+{
+	background-image: linear-gradient(to bottom,#7a7676 0,#7a7676 100%);
+	border-color: #7a7676;
+	margin-top: 10px;
+}
+
+
+.logotxt{
+	font-size: 37px;
+    margin-left: 55px;
+    font-family: 'Lobster', cursive;
+    color: #db0000;
+    letter-spacing: 1.5px;   
+
+}
+
+.uploaddiv{
+	background: #f2f2f2;
+	margin-top: 55px;
+	width:700px;
+	border:1px;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: #4a4a4a;
+	padding: 10px;
+}
+
+#categoryid{
+	display: inline-block;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.categorydropdown{
+	display: inline-block;
+}
+#categorybtn{
+	margin-left: 10px;
+    padding: 5px;
+}
+
+.drop-down{
+	position: relative;
+}
+
+#uploadtxt{
+	font-family: 'Josefin Sans', sans-serif;
+}
+label.upload-group {
+	width: 100px;
+	height: 35px;
+	color: #ffffff;
+	padding: 5px;
+	margin-right: 5px;
+	text-align: center;
+	background-image: linear-gradient(to bottom,#337ab7 0,#265a88 100%);
+	border:1px;
+	border-radius: 10px;
+
+}
+
+input#file {
+	width: 0.1px;
+	height: 0.1px;
+	position: absolute;
+	z-index: -1;
+}
+
+#uploadButton{
+
+	margin-top: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+}

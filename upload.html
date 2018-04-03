@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	
+   <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="uploadcss.css">
+  
+</head>
+
+
+<body>
+  <!-- heading container -->
+<div class="logoutdiv">  
+    <a class="logotxt" href="./upload.html">Inspire You</a>
+  
+    <button href="#" id='logoutbtn' class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </button>
+</div>
+
+<!-- upload image container -->
+
+  <div class="container uploaddiv" id="welcome">
+    <h3 id='categoryid'>Choose Category:</h3>
+    <div class="dropdown category categorydropdown">
+      <button class="btn btn-primary dropdown-toggle" id="categorybtn" type="button" data-toggle="dropdown" >Choose category of Quotes <span class="caret"> </span></button>
+        <ul class="dropdown-menu" aria-labelledby="categorydrop">
+            <li><a href="#">Inspirational Quotes</a></li>
+            <li><a href="#">Funny Quotes</a></li>
+            <li><a href="#">Love Quotes</a></li>
+            
+        </ul>       
+    </div>
+        <h3 id="uploadtxt">Upload Images: </h3>
+        
+        <label class="upload-group">
+          Choose File
+          <input type="file" class="upload-group" id="file">
+        </label>
+        <input type="text" id="imageCaption" placeholder=" Write a Caption">
+        <div>
+            <button type="button" class="btn btn-primary" id="uploadButton" onclick="uploadFile()">Upload Image</button>
+        </div>
+  </div>
+    
+ 
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- <script type="text/javascript" src="myjs.js"></script> -->
+    
+  
+
+  </body>
+  </html>
