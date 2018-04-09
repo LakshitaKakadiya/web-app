@@ -2,18 +2,21 @@ const txtemail = document.getElementById('inputEmail');
 const txtpassword = document.getElementById('inputPassword');
 const btnSignin = document.getElementById('btnSignin');
 
+
 //document.getElementById('btnSignin').addEventListener('click', SignIn, false);
-window.onload = function() {
-      onstartup();
-    };
+window.onload = function() {      
+              onstartup();
+            };
+
 function onstartup(){
 
-		console.log('onstartup fncrion start');
+		console.log('onstartup function start');
 	// Listening for auth state changes.
       // [START authstatelistener]
       firebase.auth().onAuthStateChanged(function(user) {
         
         if (user) {
+          window.location.assign('./upload.html');
           // User is signed in.
           var displayName = user.displayName;
           var email = user.email;
@@ -60,7 +63,8 @@ function SignIn(){
         // Sign in with email and pass.
         // [START authwithemail]
         firebase.auth().signInWithEmailAndPassword(email, password).then(function (){
-            window.location.assign('./upload.html');  
+            window.location.assign('./upload.html'); 
+
         }).catch(function(error) {
           // Handle Errors here.
           var errorCode = error.code;
@@ -83,7 +87,6 @@ function SignIn(){
       
 
     }
-
 
 
 

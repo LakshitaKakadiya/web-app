@@ -26,18 +26,19 @@
 <div class="logoutdiv">  
     <a class="logotxt" href="./upload.html">Inspire You</a>
   
-    <button href="#" id='logoutbtn' class="btn btn-info btn-lg">
-          <span class="glyphicon glyphicon-log-out"></span> Log out
+    <button id="logoutbtn" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-user"></span> Log out
         </button>
 </div>
 
 <!-- upload image container -->
 
   <div class="container uploaddiv" id="welcome">
+    
     <h3 id='categoryid'>Choose Category:</h3>
     <div class="dropdown category categorydropdown">
       <button class="btn btn-primary dropdown-toggle" id="categorybtn" type="button" data-toggle="dropdown" >Choose category of Quotes <span class="caret"> </span></button>
-        <ul class="dropdown-menu" aria-labelledby="categorydrop">
+        <ul class="dropdown-menu" id="categorymenu">
             <li><a href="#">Inspirational Quotes</a></li>
             <li><a href="#">Funny Quotes</a></li>
             <li><a href="#">Love Quotes</a></li>
@@ -48,15 +49,24 @@
         
         <label class="upload-group">
           Choose File
-          <input type="file" class="upload-group" id="file">
+          <input type="file" class="upload-group" id="file" multiple="true">
         </label>
         <input type="text" id="imageCaption" placeholder=" Write a Caption">
-        <div>
-            <button type="button" class="btn btn-primary" id="uploadButton" onclick="uploadFile()">Upload Image</button>
+        <div id="fileCount"></div>
+          <div class="progressdiv">
+            <div class="progress-bar progress-bar-striped active" id="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+            </div>
         </div>
+        <div><label id="result"></label></div>
+
+        <div>
+            <button type="button" class="btn btn-primary" id="uploadButton" onclick="uploadFile()">Upload Image
+            </button>
+        </div>
+    
   </div>
     
- 
+  <!-- firebase authentication -->
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>
   <!-- Bootstrap core JavaScript
@@ -67,8 +77,8 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <!-- <script type="text/javascript" src="myjs.js"></script> -->
-    
-  
+  <script type="text/javascript" src="uploadjs.js"></script>
+   <!-- <script type="text/javascript" src="inspireyoujs.js"></script> -->
 
   </body>
   </html>
